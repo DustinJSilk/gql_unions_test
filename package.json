@@ -8,7 +8,7 @@
     "test": "test"
   },
   "scripts": {
-    "build": "cp ./server/schema.graphql ./lib && flutter pub run build_runner build",
+    "build": "cp ./server/schema.graphql ./lib && flutter pub get && flutter pub run build_runner build",
     "server": "npx ts-node server/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

@@ -15,6 +15,10 @@ Start the simple GraphQL server:
 
 `$ npm run server`
 
+Build the GraphQL queries:
+
+`$ npm run build`
+
 Next, you'll need to point the app to your local GraphQL server.
 
 Get the local IP address (on mac):
@@ -34,3 +38,6 @@ You can then run the following to build a release APK:
 Connect a physical device and install the built APK:
 
 `$ adb install build/app/outputs/flutter-apk/app-release.apk`
+
+Running the obfuscated APK, you will now see an incorrect message on screen,
+showing an inability to determine the type of response.
