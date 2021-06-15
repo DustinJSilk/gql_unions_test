@@ -1,0 +1,14 @@
+type Success {
+  data: String!
+}
+
+type Error {
+  message: String!
+  code: Int!
+}
+
+union Response = Success | Error
+
+type Query {
+  getData: Response!
+}

@@ -1,0 +1,20 @@
+fragment Success on Success {
+  data
+}
+
+fragment Error on Error {
+  message
+  code
+}
+
+query getData {
+  getData {
+    ... on Success {
+      ...Success
+    }
+
+    ... on Error {
+      ...Error
+    }
+  }
+}
