@@ -7,7 +7,7 @@ import 'package:gql_unions/get-data.data.gql.dart';
 import 'package:gql_unions/get-data.req.gql.dart';
 import 'package:gql_unions/get-data.var.gql.dart';
 
-final link = HttpLink('http://172.20.10.3:3000');
+final link = HttpLink('http://localhost:3000');
 
 final client = Client(link: link);
 
